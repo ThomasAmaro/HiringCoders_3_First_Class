@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logo {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+ul {
+    list-style: none;
+    font-size: 15px ;
+    font-style: italic;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #141414, #101010, #0b0b0b, #060606, #000000);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px;
+    margin-bottom: 100px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+    border-left: 3px solid;
+    transition: transform 0.5s;
+}
+
+header ul li:hover {
+    color: #ffd900;
+    transform: scale(1.2);
+}
+
+header ul li a:hover {
+    color: #ffd900;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 45px;
+}
+
+.container .name  h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 25px;
+    cursor: pointer;
+    animation: blink 2s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to  {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #a09038;
+    color: #141414;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.form button:hover {
+    background-color: #9c551b;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 25px;
+    }
+
+    .container .name h5 {
+        font-size: 14px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
